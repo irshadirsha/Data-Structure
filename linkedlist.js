@@ -94,6 +94,40 @@ list.insertnode(40,20000)
 list.display()
 
 
+// class node {
+//     constructor(data){
+//         this.data=data
+//         this.next=null
+//     }
+// }
+// class slinkedlist{
+//     constructor(){
+//         this.head==null 
+//         this.tail==null
+//     }
+
+//     addnode(data){
+//         let newnode=new node(data)
+//         if(this.head==null){
+//             this.head=newnode
+//         }else{
+//             this.tail.next=newnode
+//         }
+//         this.tail=newnode
+//     }
+
+//     display(){
+//         if(this.head==null){
+//             console.log("empty")
+//         }else{
+//             let temp=this.head
+//             while(temp!=null){
+//                 console.log(temp.data)
+//                 temp=temp.next
+//             }
+//         }
+//     }
+
 
 
 
