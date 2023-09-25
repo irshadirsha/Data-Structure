@@ -4,9 +4,9 @@ class node {
         this.next=null
     }
 }
-class slinkedlist{
-    constructor(){
-        this.head==null 
-        this.tail==null
-    }
-}
+// class slinkedlist{
+//     constructor(){
+//         this.head==null 
+//         this.tail==null
+//     }
+// }
