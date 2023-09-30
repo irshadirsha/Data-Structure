@@ -14,7 +14,7 @@ function binarysearch(arr,target){
             right=mid-1
         }
     }
-  return -1
-}
-let arr=[1,3,7,23,67,99]
-console.log(binarysearch(arr,-23))
+//   return -1
+// }
+// let arr=[1,3,7,23,67,99]
+// console.log(binarysearch(arr,-23))
