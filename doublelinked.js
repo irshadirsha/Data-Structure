@@ -97,3 +97,9 @@ class Node {
   doublyLinkedList.displayForward(); // Output: 0, 1, 3
   doublyLinkedList.displayBackward(); // Output: 3, 1, 0
   
+
+  // doublyLinkedList.displayForward(); // Output: 0, 1, 2, 3
+  // doublyLinkedList.delete(2);
+  // doublyLinkedList.displayForward(); // Output: 0, 1, 3
+  // doublyLinkedList.displayBackward(); // Output: 3, 1, 0
+  
