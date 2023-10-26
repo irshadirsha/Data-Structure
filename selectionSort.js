@@ -10,11 +10,9 @@ function selectionSort(arr){
             let temp=arr[i]
             arr[i]=arr[min]
             arr[min]=temp
-        }
-       
+        }     
     }
     return arr
 }
-
 array=[31,51,1,2,8,6,99]
 console.log(selectionSort(array));

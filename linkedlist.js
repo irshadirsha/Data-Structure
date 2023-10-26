@@ -26,21 +26,50 @@ class slinkedlist{
         }else{
             let temp=this.head
             while(temp!=null){
-                console.log(temp.data)
+                console.log("display",temp.data)
                 temp=temp.next
             }
         }
     }
-
-    sum(){
-        let sum=0
-        let temp=this.head
-        while(temp!=null){
-            sum=sum+temp.data
-            temp=temp.next
+//USING RECURSION 
+    display(){
+        if(this.head==null){
+            console.log("empty")
+        }else{
+            this.displayrecursive(this.head)
         }
-       console.log("sum",sum)
     }
+    displayrecursive(node){
+        if(node==null){
+            return ;
+        }
+        console.log("display",node.data)
+        this.displayrecursive(node.next)
+    }
+
+    // sum(){
+    //     let sum=0
+    //     let temp=this.head
+    //     while(temp!=null){
+    //         sum=sum+temp.data
+    //         temp=temp.next
+    //     }
+    //    console.log("sum",sum)
+    // }
+    //SUM USING RECURSION
+    sum(){
+        const totalsum=this.sumrecursive(this.head,0)
+        console.log("Total sum",totalsum);
+    }
+        sumrecursive(node,currentsum){
+           if(node==null){
+            return currentsum
+           }
+
+           const newsum=currentsum+node.data;
+           return this.sumrecursive(node.next,newsum)
+        }
+    
 
     deletenode(data){
         let temp=this.head
