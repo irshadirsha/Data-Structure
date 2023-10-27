@@ -31,45 +31,17 @@ class slinkedlist{
             }
         }
     }
-//USING RECURSION 
-    display(){
-        if(this.head==null){
-            console.log("empty")
-        }else{
-            this.displayrecursive(this.head)
-        }
-    }
-    displayrecursive(node){
-        if(node==null){
-            return ;
-        }
-        console.log("display",node.data)
-        this.displayrecursive(node.next)
-    }
-
-    // sum(){
-    //     let sum=0
-    //     let temp=this.head
-    //     while(temp!=null){
-    //         sum=sum+temp.data
-    //         temp=temp.next
-    //     }
-    //    console.log("sum",sum)
-    // }
-    //SUM USING RECURSION
     sum(){
-        const totalsum=this.sumrecursive(this.head,0)
-        console.log("Total sum",totalsum);
-    }
-        sumrecursive(node,currentsum){
-           if(node==null){
-            return currentsum
-           }
-
-           const newsum=currentsum+node.data;
-           return this.sumrecursive(node.next,newsum)
+        let sum=0
+        let temp=this.head
+        while(temp!=null){
+            sum=sum+temp.data
+            temp=temp.next
         }
-    
+       console.log("sum",sum)
+    }
+   
+ 
 
     deletenode(data){
         let temp=this.head
@@ -98,19 +70,13 @@ class slinkedlist{
             temp=temp.next
         }
         if(temp==null){
-            return
-        }
+            return }
         if(temp==this.tail){
             this.tail.next=newnode 
             this.tail=newnode
-            return;
-        }
+            return;}
         newnode.next=temp.next
-        temp.next=newnode
-    }
-
-}
-
+        temp.next=newnode }}
 let list=new slinkedlist()
 list.addnode(10)
 list.addnode(20)
@@ -127,3 +93,32 @@ list.display()
 
 
 
+    //SUM USING RECURSION
+  
+    // sum(){
+    //     const totalsum=this.sumrecursive(this.head,0)
+    //     console.log("Total sum",totalsum);
+    // }
+    //     sumrecursive(node,currentsum){
+    //        if(node==null){
+    //         return currentsum
+    //        }
+
+    //        const newsum=currentsum+node.data;
+    //        return this.sumrecursive(node.next,newsum)
+    //     }
+    
+    // display(){
+    //     if(this.head==null){
+    //         console.log("empty")
+    //     }else{
+    //         this.displayrecursive(this.head)
+    //     }
+    // }
+    // displayrecursive(node){
+    //     if(node==null){
+    //         return ;
+    //     }
+    //     console.log("display",node.data)
+    //     this.displayrecursive(node.next)
+    // }
