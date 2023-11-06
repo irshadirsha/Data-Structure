@@ -71,6 +71,7 @@ class slinkedlist{
         }
         if(temp==null){
             return }
+            
         if(temp==this.tail){
             this.tail.next=newnode 
             this.tail=newnode
@@ -83,6 +84,8 @@ list.addnode(20)
 list.addnode(30)
 list.addnode(40)
 list.display()
+
+
 list.sum()
 // list.deletenode(40)
 list.insertnode(40,20000)
