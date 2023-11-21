@@ -1,18 +1,18 @@
-// let arr=["apple","mango",'irshad']
+let arr=["apple","mango",'irshad']
 
-// let newarr=[]
-// let k=0
-// for(let i=0;i<arr.length;i++){
-//     let a=[...arr[i]]
-//     console.log(a)
-//     let str=""
-//     for(let i=a.length-1;i>=0;i--){
-//        str+=a[i]
-//     }
-//     newarr[k]=str
-//     k++
-//     }
-// console.log(newarr);
+let newarr=[]
+let k=0
+for(let i=0;i<arr.length;i++){
+    let a=[...arr[i]]
+    console.log(a)
+    let str=""
+    for(let i=a.length-1;i>=0;i--){
+       str+=a[i]
+    }
+    newarr[k]=str
+    k++
+    }
+console.log(newarr);
     
  //   if(i==0){
     //    c=arr[i]
