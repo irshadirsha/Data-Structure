@@ -268,23 +268,82 @@ const Promise=require('promise')
         //         console.log("not mountain");
         //     }
         
-        const arr=[2,4,3]
-          let mon=true
-        for(let i=0;i<arr.length;i++){
-            if(arr.length < 3 || arr[0]>arr[1]){
-                mon = false 
-                break
-            }
-            if(mon && arr[i]>arr[i+1]){
-                mon = false
-            }
-            if(!mon && arr[i]<arr[i+1]){
-                mon = fasle
-            }
-        }
+        // const arr=[2,4,3]
+        //   let mon=true
+        // for(let i=0;i<arr.length;i++){
+        //     if(arr.length < 3 || arr[0]>arr[1]){
+        //         mon = false 
+        //         break
+        //     }
+        //     if(mon && arr[i]>arr[i+1]){
+        //         mon = false
+        //     }
+        //     if(!mon && arr[i]<arr[i+1]){
+        //         mon = fasle
+        //     }
+        // }
 
-        if(mon==true){
-            console.log("Is mountain");
-        }else{
-            console.log("Not mountain");
-        }
+        // if(mon==true){
+        //     console.log("Is mountain");
+        // }else{
+        //     console.log("Not mountain");
+        // }
+
+        // function display(string,string1){
+        //     console.log(string,string1);
+        //  let  str=[...string]
+        //  let str1=[...string1]
+        //  console.log(str,str1);
+        //     let count=0
+
+        //     for(let i=0;i<str.length;i++){
+        //         let flag=0
+        //         for( let j=0;j<str1.length;j++){
+        //             if(str[i]==str1[j]){
+        //                 str1[j]=null
+        //                 str[i]=null
+        //                flag=1
+        //                break;
+        //             }
+        //         }
+        //         if(flag==0){
+        //             count++
+        //         }
+
+    //         }
+    //         return count
+    //     }
+
+    //    console.log( display("heellok","helolk"));
+
+    //  const arr=[2,3,4,6,7,8,9]
+    //  function display(tar){
+    //     // console.log(tar);
+    //     for(let i=0;i<arr.length;i++){
+    //         for(let j=0;j<arr.length;j++){
+    //             if(tar==arr[i]+arr[j]){
+
+    //                 return [arr[i],arr[j]]
+                    
+    //             }else{
+    //                 return "no num"
+    //             }
+    //         }
+    //     }
+    //  }
+    //  console.log(display(19));
+     
+
+    // const arr=[[2,3,4],[4,5,6,7],[7,8,9]]
+    // let res=0
+    //     for(let i=0;i<arr.length;i++){
+    //         const newarr=arr[i]
+    //         let sum=0;
+    //         for(let j=0;j<newarr.length;j++){
+    //          sum=sum+newarr[i]   
+    //         }
+    //         if(res<sum){
+    //             res=sum
+    //         }
+    // }
+    // console.log(res);
