@@ -10,8 +10,6 @@ function isPrime(num) {
     }
     return true;
   }
-  
-  // Function to find the sum of prime numbers up to a given limit
   function sumOfPrimes(limit) {
     let sum = 0;
     for (let i = 2; i <= limit; i++) {
@@ -22,7 +20,6 @@ function isPrime(num) {
     return sum;
   }
   
-  // Example: Find the sum of prime numbers up to 10
   const limit = 10;
   const result = sumOfPrimes(limit);
   
