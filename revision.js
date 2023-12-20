@@ -79,12 +79,68 @@
 //             console.log("Promise.any error:", err);
 //         });
 
-const fs = require('fs')
+// const fs = require('fs')
 
-fs.writeFile("myFile.js","nocontent",(err)=>{
-    if(err){
-        console.log(err);
+// fs.readFile("myFile.js","utf-8",(err,data)=>{
+//     if(err){
+//         console.log(err);
+//     }else{
+//         console.log(data);
+//     }
+// })
+
+// let fruits = ['apple', 'banana', 'cherry', 'date'];
+
+// // Create a new array containing elements from index 1 to (but not including) index 3
+// let slicedFruits = fruits.slice(2, 3);
+
+// console.log(slicedFruits); // Output: ['banana', 'cherry']
+// console.log(fruits); // Output: ['apple', 'banana', 'cherry', 'date']
+
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// const double= numbers.map((element)=>element*2)
+// console.log(double);
+//  let numbers = [1, 2, 3, 4, 5]
+
+//  const sum=numbers.reduce((acc,cur)=>acc*cur)
+
+//  console.log(sum);
+
+// const http=require ('http')
+
+// http.createServer((req,res)=>{
+//      res.write("ijts my server")
+//      res.end()
+// }).listen(3000)
+
+// const express = require('express')
+// const app=express()
+// const port=4000
+// app.listen(port,()=>{
+//     console.log("server started");
+// })
+// app.get('/',(req,res)=>{
+//     const a=[2,3,5,6,7,8,6]
+//     res.send(a)
+// })
+
+
+const arr = ['4','3','k','10','5','h','p','1'];
+let sum=0
+const  number=[]
+console.log(arr);
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+    const num=parseInt(arr[i])
+    console.log(num);
+    if(isNaN(num)){
+        continue
     }else{
-        console.log("file created");
+        number.push(num)
+        sum=sum+num
     }
-})
+}
+console.log(number);
+console.log(sum);
