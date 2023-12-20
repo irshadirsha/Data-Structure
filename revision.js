@@ -127,20 +127,113 @@
 // })
 
 
-const arr = ['4','3','k','10','5','h','p','1'];
-let sum=0
-const  number=[]
-console.log(arr);
-for(let i=0;i<arr.length;i++){
-    console.log(arr[i]);
-    const num=parseInt(arr[i])
-    console.log(num);
-    if(isNaN(num)){
-        continue
-    }else{
-        number.push(num)
-        sum=sum+num
-    }
+// const arr = ['4','3','k','10','5','h','p','1'];
+// let sum=0
+// const  number=[]
+// console.log(arr);
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+//     const num=parseInt(arr[i])
+//     console.log(num);
+//     if(isNaN(num)){
+//         continue
+//     }else{
+//         number.push(num)
+//         sum=sum+num
+//     }
+// }
+// console.log(number);
+// console.log(sum);
+
+
+// const arr=[7,4,25,17,8,9,13]
+// let newarr=[]
+// let small=arr[0];
+// let large=0
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]>large){
+//         large=arr[i]
+//     }
+//     if(arr[i]<small){
+//         small=arr[i]
+//     }
+// }
+// console.log(small,large);
+// // for(let i=small;i<=large;i++){
+// //     if(!arr.includes(i)){
+// //         newarr.push(i)
+// //     }else{
+// //         continue
+// //     }
+// // }
+// for(let i=small;i<=large;i++){
+//     flag=0
+//     for(let j=0;j<arr.length;j++){
+//         if(i!==arr[j]){
+//             continue
+//         }else{
+//             flag=1
+//         }
+//     }
+//     if(flag==0){
+//         newarr.push(i)
+//     }
+// }
+// console.log(newarr);
+
+// const arr=[7,4,7,17,4,9,4,2,6,2]
+// const newarr=[]
+
+// for(let i=0;i<arr.length;i++){
+//     flag=0
+//     for(let j=0;j<newarr.length;j++){
+//         if(arr[i]==newarr[j]){
+//             flag=1
+//             break;
+//         }
+//     }
+//     if(flag==0){
+//         newarr.push(arr[i])
+//     }
+// }
+
+// console.log(newarr);
+
+
+// const arr = ['4','3','k','10','5','h','p','1'];
+// let newarr=[]
+// let sum=0
+// for(let i=0;i<arr.length;i++){
+//     let num=parseInt(arr[i])
+//     if(isNaN(num)){
+//         continue
+//     }else{
+//         newarr.push(num)
+//         sum+=num
+//     }
+// }
+// console.log(newarr);
+// console.log(sum);
+
+const arr = [1, 2, 3, 4, 5];
+let k = 2;
+
+
+const n = arr.length;  // Get the length of the array
+const rotatedArray = [];  // Create an empty array to store rotated elements
+console.log("length",n);
+for (let i = 0; i < n; i++) {
+  // Calculate the new index after rotation
+  const rotatedIndex = (i + k) % n;
+  console.log(rotatedIndex);
+  
+  // Assign the element to the rotated index in the new array
+  rotatedArray[rotatedIndex] = arr[i];
 }
-console.log(number);
-console.log(sum);
+
+// Update the original array with the rotated elements
+for (let i = 0; i < n; i++) {
+  arr[i] = rotatedArray[i];
+}
+
+console.log(arr);  // Output the rotated array
