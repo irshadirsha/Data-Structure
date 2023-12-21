@@ -237,3 +237,32 @@ for (let i = 0; i < n; i++) {
 }
 
 console.log(arr);  // Output the rotated array
+
+
+
+var addDigits = function(num) {
+  let str = `${num}`;
+  let ar = [...str];
+  let sum = 0;
+
+  for (let i = 0; i < ar.length; i++) {
+      sum += parseInt(ar[i]);
+      console.log(sum);
+
+      if (sum > 9 && i == ar.length - 1) {
+          console.log('jjj');
+          str = `${sum}`;
+          ar = [...str];
+          sum = 0;
+          i = 0 ;
+      }else{
+          i++
+      }
+  }
+
+  return sum;
+};
+
+
+
+console.log(addDigits(38))
