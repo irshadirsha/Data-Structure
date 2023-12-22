@@ -215,54 +215,70 @@
 // console.log(newarr);
 // console.log(sum);
 
-const arr = [1, 2, 3, 4, 5];
-let k = 2;
+// const arr = [1, 2, 3, 4, 5];
+// let k = 2;
 
 
-const n = arr.length;  // Get the length of the array
-const rotatedArray = [];  // Create an empty array to store rotated elements
-console.log("length",n);
-for (let i = 0; i < n; i++) {
-  // Calculate the new index after rotation
-  const rotatedIndex = (i + k) % n;
-  console.log(rotatedIndex);
+// const n = arr.length;  // Get the length of the array
+// const rotatedArray = [];  // Create an empty array to store rotated elements
+// console.log("length",n);
+// for (let i = 0; i < n; i++) {
+//   // Calculate the new index after rotation
+//   const rotatedIndex = (i + k) % n;
+//   console.log(rotatedIndex);
   
-  // Assign the element to the rotated index in the new array
-  rotatedArray[rotatedIndex] = arr[i];
-}
+//   // Assign the element to the rotated index in the new array
+//   rotatedArray[rotatedIndex] = arr[i];
+// }
 
-// Update the original array with the rotated elements
-for (let i = 0; i < n; i++) {
-  arr[i] = rotatedArray[i];
-}
+// // Update the original array with the rotated elements
+// for (let i = 0; i < n; i++) {
+//   arr[i] = rotatedArray[i];
+// }
 
-console.log(arr);  // Output the rotated array
+// console.log(arr);  // Output the rotated array
 
 
 
-var addDigits = function(num) {
-  let str = `${num}`;
-  let ar = [...str];
-  let sum = 0;
+// var addDigits = function(num) {
+//   let str = `${num}`;
+//   let ar = [...str];
+//   let sum = 0;
 
-  for (let i = 0; i < ar.length; i++) {
-      sum += parseInt(ar[i]);
-      console.log(sum);
+//   for (let i = 0; i < ar.length; i++) {
+//       sum += parseInt(ar[i]);
+//       console.log(sum);
 
-      if (sum > 9 && i == ar.length - 1) {
-          console.log('jjj');
-          str = `${sum}`;
-          ar = [...str];
-          sum = 0;
-          i = 0 ;
-      }else{
-          i++
-      }
+//       if (sum > 9 && i == ar.length - 1) {
+//           console.log('jjj');
+//           str = `${sum}`;
+//           ar = [...str];
+//           sum = 0;
+//           i = 0 ;
+//       }else{
+//           i++
+//       }
+//   }
+
+//   return sum;
+// };
+
+
+
+// console.log(addDigits(38))
+
+
+const arr1 = ['4','3','k','+','10','5','h','p','1'];
+let sum=0
+console.log(arr1)
+for(let i=0;i<arr1.length;i++){
+  console.log(arr1[i]);
+  const num=parseInt(arr1[i])
+  if(isNaN(num)){
+    continue
+  }else{
+    console.log("---",num);
+    sum=sum+num
   }
-
-  return sum;
-};
-
-
-
-console.log(addDigits(38))
+}
+console.log(sum);
