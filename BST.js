@@ -43,24 +43,39 @@ class Node {
       }
     }
   
-    search(value) {
-      let current = this.root;
+    // search(value) {
+    //   let current = this.root;
   
-      while (current) {
+    //   while (current) {
+    //     if (value === current.value) {
+    //       return true;
+    //     }
+  
+    //     if (value < current.value) {
+    //       current = current.left;
+    //     } else {
+    //       current = current.right;
+    //     }
+    //   }
+  
+    //   return false;
+    // }
+    search(value, current = this.root) {
+        if (!current) {
+            return false;
+        }
+    
         if (value === current.value) {
-          return true;
+            return true;
         }
-  
+    
         if (value < current.value) {
-          current = current.left;
+            return this.search(value, current.left);
         } else {
-          current = current.right;
+            return this.search(value, current.right);
         }
-      }
-  
-      return false;
     }
-  
+    
     inOrderTraversal(node = this.root, result = []) {
       if (node) {
         this.inOrderTraversal(node.left, result);
