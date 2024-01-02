@@ -16,3 +16,11 @@ function addToTotal(value) {
 addToTotal(5)
 addToTotal(5)
 addToTotal(6)
+let total=0
+function addToTotals(value) {
+  total+=value
+    console.log(`Total is now ${total}`);
+}
+addToTotals(5)
+addToTotals(5)
+addToTotals(6)
