@@ -21,7 +21,7 @@
 // console.log(result);
 
 let a = 6;
-let b = 5;
+let b = 5;  
 
 // Swapping values without a third variable
 [a, b] = [b, a];
