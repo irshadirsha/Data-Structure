@@ -23,11 +23,11 @@ const arr=[2,4,6,7,8,]
 // console.log(output);
 
 
-const users=[
-    {firstname:"mahammad",lastname:"irshad",age:20},
-    {firstname:"ismail",lastname:"irfan",age:30},
-    {firstname:"yousuf",lastname:"ihsan",age:25},
-    {firstname:"ahammad",lastname:"younus",age:20}]
+// const users=[
+//     {firstname:"mahammad",lastname:"irshad",age:20},
+//     {firstname:"ismail",lastname:"irfan",age:30},
+//     {firstname:"yousuf",lastname:"ihsan",age:25},
+//     {firstname:"ahammad",lastname:"younus",age:20}]
 
     // const output=users.reduce((acc,curr)=>{
     //     console.log("acc",acc);
@@ -43,7 +43,22 @@ const users=[
 
     // console.log(output)
 
- const output=users.filter(item=>item.age<30).map(name=>{return name.firstname})
+//  const output=users.filter(item=>item.age<30).map(name=>{return name.firstname})
      
  
- console.log(output)
+//  console.log(output)
+
+const users=[
+    {firstname:"mahammad",lastname:"irshad",age:20},
+    {firstname:"ismail",lastname:"irfan",age:30},
+    {firstname:"yousuf",lastname:"ihsan",age:25},
+    {firstname:"ahammad",lastname:"younus",age:20}]
+
+    const output=users.reduce((acc,curr)=>{
+       if(curr.age<30){
+        acc.push(curr.firstname)
+       }
+       return acc
+    },[])
+
+    console.log(output);
