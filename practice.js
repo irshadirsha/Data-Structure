@@ -220,3 +220,75 @@
 // words = ["cool","lock","cook"]
 // commonChars(words)
 // // Output: ["e","l","l"]
+
+
+
+// var minDeletionSize = function(strs) {
+    
+// let count =0
+// let row = strs.length
+// let col = strs[0].length
+
+// for(let  i =0 ; i< col ; i ++){
+// for(let j =0 ; j < row-1 ; j++){
+//    if(strs[j][i] > strs[j+1][i]) {
+//       count++
+//    break
+//    }
+// }
+// }
+
+// return count
+// };
+
+// strs=  ["zyx","wvu","tsr"]
+
+// console.log(minDeletionSize(strs))
+
+// var mostCommonWord = function(paragraph, banned) {
+//    //  return [paragraph, banned]
+//    let pasage=paragraph.toString()
+//    console.log(pasage);
+//   let total=0
+//    for(let i=0;i<pasage.length;i++){
+//       console.log(pasage[i]);
+//       if(pasage[i]!==banned){
+//          let count=0
+//          for(let j=0;j<pasage.length;j++){
+//             console.log("j loop",pasage[j]);
+//            if(pasage[i]==pasage[j]){
+//             count ++
+//            }
+//          }
+//        if(count > total){
+//          total=count
+//        }
+//       }
+
+    
+//    }
+//    return total
+// };
+
+//  paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.", 
+//  banned = ["Bob"]
+//  console.log(mostCommonWord(paragraph,banned))
+
+// // Output: "ball"
+
+
+var firstPalindrome = function(words) {
+   // console.log(words)
+   for(let i=0;i<words.length;i++){
+      // console.log(words[i])
+      let rev=words[i].split("").reverse().join("")
+      // console.log("rev",rev);
+      if(words[i]==rev){
+         return rev
+      }
+   }
+
+};
+words = ["abc","car","ada","racecar","cool"]
+console.log(firstPalindrome(words))
+// Output: "ada"
