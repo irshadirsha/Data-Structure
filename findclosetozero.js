@@ -104,4 +104,4 @@ var isPalindrome = function(s) {
 };
 
 
-    isPalindrome("A man, a plansssas, a canal Panama")
+    isPalindrome("MALAYALAM")

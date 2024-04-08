@@ -19,3 +19,4 @@ for(let i=0;i<arr.length;i++){
 }
 console.log(prime);
 console.log(nonprime);
+// PRIME AND NON PRIME

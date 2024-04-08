@@ -13,6 +13,7 @@ for(let i=0;i<arr.length;i++){
     k++
     }
 console.log(newarr);
+// ARRAY STRING REVERS
     
  //   if(i==0){
     //    c=arr[i]
@@ -60,18 +61,18 @@ console.log(newarr);
 
 
 
-function sumOfDigits(n) {
-    // Base case: If n is a single digit, return n itself
-    if (n < 10) {
-      return n;
-    } else {
-      // Recursively sum the digits of n
-      return (n % 10) + sumOfDigits(Math.floor(n / 10));
-    }
-}
-const number = 12345;
-  console.log(sumOfDigits(number))
-  // Test the function
+// function sumOfDigits(n) {
+//     // Base case: If n is a single digit, return n itself
+//     if (n < 10) {
+//       return n;
+//     } else {
+//       // Recursively sum the digits of n
+//       return (n % 10) + sumOfDigits(Math.floor(n / 10));
+//     }
+// }
+// const number = 12345;
+//   console.log(sumOfDigits(number))
+//   // Test the function
 //   const result = sumOfDigits(number);
 //   console.log(`Sum of digits of ${number} is ${result}`);
   

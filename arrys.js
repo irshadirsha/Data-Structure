@@ -1,14 +1,14 @@
 // let originalArray = [1, 2, 3, 4, 5];
-// let originalArray = "mahammadirshad"
+// // let originalArray = "mahammadirshad"
 // console.log(originalArray);
 // let rev=originalArray.split("").reverse().join("")
 // console.log(rev);
 
-// let originalArray = [1, 2, 3, 4, 5];
-// // let originalArray = "mahammadirshad"
-// console.log(originalArray);
-// let rev=originalArray.reverse()
-// console.log(rev);
+// // let originalArray = [1, 2, 3, 4, 5];
+// // // let originalArray = "mahammadirshad"
+// // console.log(originalArray);
+// // let rev=originalArray.reverse()
+// // console.log(rev);
 
 // let arr=[2,3,4,5,6,7,8]
 
