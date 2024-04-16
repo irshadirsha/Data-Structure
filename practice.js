@@ -277,18 +277,88 @@
 // // Output: "ball"
 
 
-var firstPalindrome = function(words) {
-   // console.log(words)
-   for(let i=0;i<words.length;i++){
-      // console.log(words[i])
-      let rev=words[i].split("").reverse().join("")
-      // console.log("rev",rev);
-      if(words[i]==rev){
-         return rev
-      }
-   }
+// var firstPalindrome = function(words) {
+//    // console.log(words)
+//    for(let i=0;i<words.length;i++){
+//       // console.log(words[i])
+//       let rev=words[i].split("").reverse().join("")
+//       // console.log("rev",rev);
+//       if(words[i]==rev){
+//          return rev
+//       }
+//    }
 
+// };
+// words = ["abc","car","ada","racecar","cool"]
+// console.log(firstPalindrome(words))
+// // Output: "ada"
+
+// var arrayStringsAreEqual = function(word1, word2) {
+//     console.log(word1, word2)
+//    let words1=word1.join("")
+//    let words2=word2.join("")
+//    console.log(words1,words2);
+//    if(words1==words2){
+//       return true
+//    }else{
+//       return fase
+//    }
+// };
+//  word1 = ["ab", "c"], word2 = ["a", "bc"]
+//  console.log(arrayStringsAreEqual(word1,word2))
+// // Output: true
+
+// var countConsistentStrings = function(allowed, words) {
+//    let count = 0
+//     for(let i=0;i<words.length;i++){
+//       let word=words[i]
+//       let consistent=true
+//       for(let j=0;j<word.length;j++){
+//          if(!allowed.includes(word[j])){
+//             consistent=false
+//             break
+//          }
+//       }
+//       if(consistent==true){
+//          count ++
+//       }
+//     }
+//     return count
+  
+// };
+// let allowed = "cad"
+// let words = ["cc","acd","b","ba","bac","bad","ac","d"]
+// console.log(countConsistentStrings(allowed,words))
+
+// var findWordsContaining = function(words, x) {
+//     console.log(words,x);
+//     let arr=[]
+//     for(let i=0;i<words.length;i++){
+//       if(words[i].includes(x)){
+//          arr.push(i)
+//       }
+//     }
+//     return arr
+// };
+//  words = ["leet","code"], x = "e"
+//  console.log(findWordsContaining(words,x))
+// Output: [0,1]
+
+
+var sortPeople = function(names, heights) {
+    console.log(names,heights)
+
+    for(let i=0;i<heights.length;i++){
+      for(let j=i+1;j<heights.length;j++){
+            if(heights[i]<heights[j]){
+             let  temp=names[i]
+             names[i]=names[j]
+             names[j]=temp
+            }
+      }
+    }
+    return names
 };
-words = ["abc","car","ada","racecar","cool"]
-console.log(firstPalindrome(words))
-// Output: "ada"
+names = ["Mary","John","Emma"], heights = [180,165,170]
+console.log(sortPeople(names,heights))
+// Output: ["Mary","Emma","John"]
