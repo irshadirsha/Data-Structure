@@ -48,20 +48,7 @@
 // // Output: 2
 
 
-// var maximumNumberOfStringPairs = function(words) {
-//     let count = 0;
-//     for (let i = 0; i < words.length; i++) {
-//         for (let j = i + 1; j < words.length; j++) {
-//             if (words[i].includes(words[j]) || words[j].includes(words[i])) {
-//                 count++;
-//             }
-//         }
-//     }
-//     return count;
-// };
 
-// let words = ["cd", "ac", "dc", "ca", "zz"];
-// console.log(maximumNumberOfStringPairs(words));
 
 var maximumNumberOfStringPairs = function(words) {
     let count = 0;
