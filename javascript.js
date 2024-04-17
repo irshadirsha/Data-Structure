@@ -49,19 +49,42 @@
 
 
 
+// var moveZeroes = function(nums) {
+//     console.log(nums);
+//     let newnum=[]
+//     let count =0;
+//     for(let i=0;i<nums.length;i++){
+//         if(nums[i]==0){
+//             count++
+//         }else{
+//             newnum.push(nums[i])
+//         }
+//     }
+//     for(let i=0;i<count;i++){
+//         newnum.push(0)
+//     }
+//     return newnum
+// };
+// let nums = [0,1,0,0,9,0,7,0,7,0,3,12]
+// console.log(moveZeroes(nums))
+// // Output: [1,3,12,0,0]
 
-var maximumNumberOfStringPairs = function(words) {
+
+var moveZeroes = function(nums) {
     let count = 0;
-    for (let i = 0; i < words.length; i++) {
-        for (let j = i + 1; j < words.length; j++) {
-            if (words[i].includes(words[j]) || words[j].includes(words[i])) {
-                count++;
-            }
+    // Loop through the array
+    for (let i = 0; i < nums.length; i++) {
+        // If the current element is not 0, swap it with the element at index 'count'
+        if (nums[i] !== 0) {
+            let temp = nums[count];
+            nums[count] = nums[i];
+            nums[i] = temp;
+            count++;
         }
     }
-    return count;
+    return nums;
 };
 
-let words = ["cd", "ac", "dc", "ca", "zz"];
-console.log(maximumNumberOfStringPairs(words)); // Output: 2
-
+// Test cases
+console.log(moveZeroes([0,1,0,3,12])); // Output: [1,3,12,0,0]
+console.log(moveZeroes([0])); // Output: [0]
